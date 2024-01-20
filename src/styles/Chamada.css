@@ -1,0 +1,26 @@
+.main-table-chamada {
+    margin: 20px;
+}
+
+.main-table-chamada td {
+    padding: 3px 10px;
+    text-align: center;
+    width: 30%;
+}
+
+.main-table-chamada div {
+    text-align: center;
+    margin: auto;
+}
+
+.larger-checkbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+.checked {
+    background: url('../icons/icon-check-chamda.png') no-repeat center;
+    background-size: 100%;
+}

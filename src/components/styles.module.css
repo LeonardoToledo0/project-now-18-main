@@ -1,0 +1,71 @@
+/* styles.module.css */
+
+.BoxForm {
+  color: white;
+  width: 80%; /* Ajuste a largura conforme necessário */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.BoxFormTitle {
+  padding: 2rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.TitleContent {
+  padding: 10px;
+  color: black;
+  background-color: transparent;
+}
+
+.InputBox {
+  position: relative;
+}
+
+.InputLabel {
+  position: absolute;
+  top: 50%; /* Ajusta para centralizar verticalmente */
+  left: 0;
+  transform: translateY(-50%); /* Ajusta para centralizar verticalmente */
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.InputUser {
+  background: none;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  color: black;
+  font-size: 18px;
+  width: 100%;
+  letter-spacing: 2px;
+}
+
+.InputUser:focus + .InputLabel,
+.InputUser:valid + .InputLabel {
+  top: -50px;
+  font-size: 14px;
+  color: #7994a5;
+}
+
+.SelectoParagraf {
+  color: black;
+}
+
+.ButtonSubmit {
+  background-color: #7994a5;
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* Adicione mais estilos conforme necessário */

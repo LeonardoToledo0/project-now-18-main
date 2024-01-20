@@ -1,0 +1,43 @@
+.CronometroMini {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.timer {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button:nth-child(1) {
+    padding: 0%;
+}
+
+.buttons button {
+    width: 20%;
+    margin: 5px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+}
+
+/* Adicione isso ao seu arquivo CronometroMini.css */
+.circular-effect {
+    display: inline-block;
+    border: 2px solid #3498db;
+    /* Cor do contorno */
+    border-radius: 50%;
+    padding: 5px;
+    /* Ajuste o espaçamento conforme necessário */
+}
+
+
+img {
+    width: 30px;
+    margin: 0 20px;
+}

@@ -1,0 +1,10 @@
+iframe {
+    width: 99%;
+    overflow-y: visible;
+    height: 100vh;
+    margin-top: 0px;
+}
+
+BODY {
+    margin: 0;
+}

@@ -1,0 +1,83 @@
+[debug] [2024-01-18T20:26:56.835Z] ----------------------------------------------------------------------
+[debug] [2024-01-18T20:26:56.841Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init functions
+[debug] [2024-01-18T20:26:56.843Z] CLI Version:   13.0.3
+[debug] [2024-01-18T20:26:56.844Z] Platform:      win32
+[debug] [2024-01-18T20:26:56.844Z] Node Version:  v18.14.1
+[debug] [2024-01-18T20:26:56.846Z] Time:          Thu Jan 18 2024 17:26:56 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2024-01-18T20:26:56.846Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-18T20:26:56.871Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-01-18T20:26:57.197Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-18T20:26:57.198Z] > authorizing via signed-in user (robertcontaprofissional2023@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\maria\OneDrive\Área de Trabalho\Full Stack\React Native\site-prof-bruno-original
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-01-18T20:26:57.260Z] Using project from CLI flag: prof-bruno
+[debug] [2024-01-18T20:26:57.263Z] > refreshing access token with scopes: []
+[debug] [2024-01-18T20:26:57.267Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-01-18T20:26:57.268Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-18T20:26:57.523Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-01-18T20:26:57.524Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-18T20:26:57.563Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/prof-bruno [none]
+[debug] [2024-01-18T20:26:57.990Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/prof-bruno 200
+[debug] [2024-01-18T20:26:57.991Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/prof-bruno {"projectId":"prof-bruno","projectNumber":"668359353020","displayName":"prof-bruno","name":"projects/prof-bruno","resources":{"hostingSite":"prof-bruno","storageBucket":"prof-bruno.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_ad0d805e-db4e-4d3a-b269-b80a3c5bc01b"}
+[info] i  Using project prof-bruno (prof-bruno) 
+[info] 
+=== Functions Setup
+[debug] [2024-01-18T20:26:58.001Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-18T20:26:58.001Z] > authorizing via signed-in user (robertcontaprofissional2023@gmail.com)
+[debug] [2024-01-18T20:26:58.001Z] [iam] checking project prof-bruno for permissions ["firebase.projects.get"]
+[debug] [2024-01-18T20:26:58.002Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/prof-bruno:testIamPermissions [none]
+[debug] [2024-01-18T20:26:58.002Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/prof-bruno:testIamPermissions x-goog-quota-user=projects/prof-bruno
+[debug] [2024-01-18T20:26:58.002Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/prof-bruno:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-01-18T20:26:58.380Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-01-18T20:26:58.380Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-01-18T20:26:59.054Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/prof-bruno:testIamPermissions 200
+[debug] [2024-01-18T20:26:59.054Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/prof-bruno:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-01-18T20:26:59.056Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/prof-bruno/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-01-18T20:26:59.056Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/prof-bruno/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/prof-bruno
+[debug] [2024-01-18T20:26:59.060Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/prof-bruno/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-01-18T20:26:59.061Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/prof-bruno/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/prof-bruno
+[debug] [2024-01-18T20:27:00.290Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/prof-bruno/services/runtimeconfig.googleapis.com 200
+[debug] [2024-01-18T20:27:00.291Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/prof-bruno/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-01-18T20:27:00.292Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/prof-bruno/services/cloudfunctions.googleapis.com 200
+[debug] [2024-01-18T20:27:00.293Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/prof-bruno/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2024-01-18T20:27:00.294Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/prof-bruno/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2024-01-18T20:27:00.294Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/prof-bruno/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/prof-bruno
+[debug] [2024-01-18T20:27:02.506Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/prof-bruno/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2024-01-18T20:27:02.507Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/prof-bruno/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2024-01-18T20:27:12.525Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/prof-bruno/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-01-18T20:27:12.526Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/prof-bruno/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/prof-bruno
+[debug] [2024-01-18T20:27:13.703Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/prof-bruno/services/cloudfunctions.googleapis.com 200
+[debug] [2024-01-18T20:27:13.703Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/prof-bruno/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
